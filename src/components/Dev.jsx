@@ -34,6 +34,12 @@ const Projects = () => {
       github: "https://github.com/ambrishchaurasia/cricketgame",
       live: "https://ambrishchaurasia.github.io/cricketgame/",
     },
+     {
+      title: "LE4VE",
+      desc: "Cricket game built in vanilla JavaScript.",
+      github: "https://github.com/ambrishchaurasia/cricketgame",
+      live: "https://ambrishchaurasia.github.io/cricketgame/",
+    },
   ]
 
   return (
@@ -43,60 +49,96 @@ const Projects = () => {
            Projects
         </h2>
 
-        <div className="relative">
-
-          {/* LEFT BUTTON */}
-          <button
-            onClick={() => scroll("left")}
-            className="absolute -left-6 top-1/2 -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 hover:shadow-md transition"
-          >
-            <ChevronLeft size={20} />
-          </button>
-
-          {/* CARDS */}
-          <div
-            ref={scrollRef}
-            className="flex gap-8 overflow-hidden"
-          >
-            {projects.map((project, index) => (
-              <div
-  key={index}
-  onClick={() => window.open(project.live, "_blank")}
-  className="min-w-[280px] h-[200px] border border-gray-200 rounded-2xl p-6 flex flex-col justify-between flex-shrink-0 hover:shadow-lg hover:-translate-y-1 transition cursor-pointer"
+        {/* MOBILE SLIDER */}
+<div
+  ref={scrollRef}
+  className="flex md:hidden overflow-x-auto snap-x snap-mandatory scroll-smooth no-scrollbar"
 >
-                <h3 className="text-xl font-medium mb-3">
-                  {project.title}
-                </h3>
+  {[...projects, ...projects].map((project, index) => (
+    <div
+      key={index}
+      onClick={() => window.open(project.live, "_blank")}
+      className="min-w-full snap-center px-2"
+    >
+      <div className="border border-gray-200 rounded-2xl p-6 flex flex-col justify-between h-[240px]">
+        <h3 className="text-xl font-medium mb-3">
+          {project.title}
+        </h3>
 
-                <p className="text-gray-600 text-sm mb-4">
-                  {project.desc}
-                </p>
+        <p className="text-gray-600 text-sm mb-4">
+          {project.desc}
+        </p>
 
-                {/* GitHub Link */}
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black transition"
-                >
-                  <Github size={16} />
-                  GitHub
-                </a>
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black transition"
+        >
+          <Github size={16} />
+          GitHub
+        </a>
+      </div>
+    </div>
+  ))}
+</div>
 
-              </div>
-            ))}
-          </div>
 
-          {/* RIGHT BUTTON */}
-          <button
-            onClick={() => scroll("right")}
-            className="absolute -right-6 top-1/2 -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 hover:shadow-md transition"
-          >
-            <ChevronRight size={20} />
-          </button>
+{/* DESKTOP GRID (UNCHANGED) */}
+{/* DESKTOP SLIDER */}
+<div className="hidden md:block relative">
 
-        </div>
+  {/* LEFT BUTTON */}
+  <button
+    onClick={() => scroll("left")}
+    className="absolute -left-6 top-1/2 -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 hover:shadow-md transition"
+  >
+    <ChevronLeft size={20} />
+  </button>
+
+  {/* GRID WRAPPER */}
+  <div
+    ref={scrollRef}
+    className="flex gap-8 overflow-x-auto scroll-smooth no-scrollbar"
+  >
+    {projects.map((project, index) => (
+      <div
+        key={index}
+        onClick={() => window.open(project.live, "_blank")}
+        className="min-w-[300px] border border-gray-200 rounded-2xl p-6 flex flex-col justify-between h-[240px] hover:shadow-lg hover:-translate-y-1 transition cursor-pointer"
+      >
+        <h3 className="text-xl font-medium mb-3">
+          {project.title}
+        </h3>
+
+        <p className="text-gray-600 text-sm mb-4">
+          {project.desc}
+        </p>
+
+        <a
+          href={project.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={(e) => e.stopPropagation()}
+          className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black transition"
+        >
+          <Github size={16} />
+          GitHub
+        </a>
+      </div>
+    ))}
+  </div>
+
+  {/* RIGHT BUTTON */}
+  <button
+    onClick={() => scroll("right")}
+    className="absolute -right-6 top-1/2 -translate-y-1/2 bg-white border border-gray-200 rounded-full p-2 hover:shadow-md transition"
+  >
+    <ChevronRight size={20} />
+  </button>
+
+</div>
         <div className="mt-20 text-center text-sm text-gray-600 tracking-wide">
   MERN · SQL · HTML · CSS · JavaScript · <span className="line-through text-gray-400">GPT</span>
 </div>
@@ -106,3 +148,4 @@ const Projects = () => {
 }
 
 export default Projects
+

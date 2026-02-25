@@ -2,8 +2,7 @@ import React from "react"
 
 const DSA = () => {
   return (
-    <section className="min-h-screen flex items-center">
-      <div className="max-w-6xl mx-auto w-full px-6">
+        <section className="min-h-screen flex items-start md:items-center pt-16 md:pt-0">      <div className="max-w-6xl mx-auto w-full px-6">
 
         {/* Section Heading */}
         <h2 className="text-4xl md:text-6xl font-medium tracking-tight mb-16">

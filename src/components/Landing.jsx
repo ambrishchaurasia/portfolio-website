@@ -9,8 +9,8 @@ const Landing = () => {
   const [isHover, setIsHover] = useState(false)
 
   return (
-   <section className="min-h-screen flex items-center pt-24">
-  <div className="max-w-7xl mx-auto w-full px-6 grid grid-cols-3 items-center ">
+   <section className="min-h-screen flex items-center pt-16 md:pt-24">
+  <div className="max-w-7xl mx-auto w-full px-6 grid grid-cols-1 md:grid-cols-3 items-center gap-12">
 
     {/* LEFT SIDE */}
     <div className="space-y-4 -ml-4">
