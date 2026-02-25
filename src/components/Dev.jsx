@@ -18,7 +18,7 @@ const Projects = () => {
   const projects = [
     {
       title: "Doonga Boys Hostel Website",
-      desc: "Personal developer portfolio built with React & Tailwind.",
+      desc: "The Doonga Boys Home website was created to give the hostel a proper digital presence. ",
       github: "https://github.com/ambrishchaurasia/doongaboyshome",
       live: "https://doongaboyshome.vercel.app/",
     },
@@ -35,10 +35,10 @@ const Projects = () => {
       live: "https://ambrishchaurasia.github.io/cricketgame/",
     },
      {
-      title: "LE4VE",
-      desc: "Cricket game built in vanilla JavaScript.",
-      github: "https://github.com/ambrishchaurasia/cricketgame",
-      live: "https://ambrishchaurasia.github.io/cricketgame/",
+      title: "ByteNotes",
+      desc: "A note-taking app built with React and Tailwind CSS.",
+      github: "https://github.com/ambrishchaurasia/bytenotes",
+      live: "https://bytenotes.vercel.app/",
     },
   ]
 

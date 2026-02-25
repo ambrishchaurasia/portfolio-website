@@ -47,7 +47,7 @@ const Landing = () => {
         }}
       />
       <a
-    href="ambrishchaurasiya.work@gmail.com"
+    href="mailto:ambrishchaurasiya.work@gmail.com"
     className="text-sm text-gray-500 hover:text-black transition duration-300 tracking-wide py-7"
   >
     let’s build something
