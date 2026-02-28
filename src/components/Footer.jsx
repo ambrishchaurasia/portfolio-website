@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row md:justify-between text-gray-600 text-sm">
 
           <div className="space-y-2 mb-6 md:mb-0">
-            <p>Email: ambrishchaurasiya.work@gmailcom</p>
+            <p>Email: ambrishchaurasiya.work@gmail.com</p>
             <p>Location: India</p>
           </div>
 
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Line */}
-        <div className="mt-12 text-xs text-gray-400">
+        <div className="mt-12 text-xs text-gray-400 text-center">
           © {new Date().getFullYear()} Ambrish. All rights reserved.
         </div>
 
