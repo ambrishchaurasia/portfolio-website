@@ -38,7 +38,7 @@ const Projects = () => {
       title: "ByteNotes",
       desc: "A note-taking app built with React and Tailwind CSS.",
       github: "https://github.com/ambrishchaurasia/bytenotes",
-      live: "https://bytenotes.vercel.app/",
+      live: "https://bytnotes.vercel.app/",
     },
   ]
 
