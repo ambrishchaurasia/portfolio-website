@@ -40,7 +40,7 @@ const Landing = () => {
     />
     <a
       href="mailto:ambrishchaurasiya.work@gmail.com"
-      className="text-xs tracking-widest text-gray-500 hover:text-yellow-400 transition duration-300 px-5 py-2 rounded-full border border-gray-800 glow-animate"
+      className="text-xs tracking-widest text-gray-500 hover:text-yellow-400 transition duration-300 px-5 py-2 "
     >
       💡 let's build something
     </a>
