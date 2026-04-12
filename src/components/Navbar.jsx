@@ -27,14 +27,17 @@ const Navbar = () => {
             Hobbies
           </a>
 
-           <a 
-            href="/Resume-AmbrishChaurasiya.pdf"
-            download="Resume-AmbrishChaurasiya.pdf"
-            className=" transition relative group overflow-hidden">
-
-           <span className="px-1 relative z-10 group-hover:text-white">Download Resume</span>
-          <span className="absolute left-0 bottom-0 w-full h-0.5  transition-all bg-gray-900 z-0 group-hover:h-full "></span>  
-          </a>
+          <a 
+  href="/Resume-AmbrishChaurasiya.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="transition relative group overflow-hidden"
+>
+  <span className="px-1 relative z-10 group-hover:text-white">
+    View Resume
+  </span>
+  <span className="absolute left-0 bottom-0 w-full h-0.5 transition-all bg-gray-900 z-0 group-hover:h-full"></span>  
+</a>
         </div>
 
       </div>
