@@ -12,3 +12,16 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.glow-yellow {
+  text-shadow: 
+    0 0 4px rgba(255, 223, 0, 0.25),
+    0 0 8px rgba(255, 223, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.glow-yellow:hover {
+  text-shadow: 
+    0 0 6px rgba(255, 223, 0, 0.5),
+    0 0 12px rgba(255, 223, 0, 0.35);
+}
